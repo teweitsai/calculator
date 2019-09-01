@@ -1,6 +1,6 @@
 #include <iostream>
-#include <Token_stream.h>
-#include <Utility.h>
+#include "Token_stream.h"
+#include "Utility.h"
 
 // The constructor just sets full to indicate that the buffer is empty:
 Token_stream::Token_stream()

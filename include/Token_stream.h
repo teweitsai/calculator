@@ -1,7 +1,7 @@
 #ifndef TOKEN_STREAM_H
 #define TOKEN_STREAM_H
 
-#include <Token.h>
+#include "Token.h"
 
 class Token_stream {
 public:

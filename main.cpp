@@ -7,8 +7,8 @@
 //
 
 #include <iostream>
-#include <include/Token_stream.h>
-#include <include/Utility.h>
+#include "Token_stream.h"
+#include "Utility.h"
 
 int main()
 {

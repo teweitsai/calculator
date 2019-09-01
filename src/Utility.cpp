@@ -1,7 +1,7 @@
 #include <iostream>
-#include <Utility.h>
-#include <Token.h>
-#include <Token_stream.h>
+#include "Utility.h"
+#include "Token.h"
+#include "Token_stream.h"
 
 // Helper function to show an error message
 inline void error(const std::string& errormessage)
