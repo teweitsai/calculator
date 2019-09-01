@@ -4,19 +4,19 @@
 #include "Token_stream.h"
 
 // Helper function to show an error message
-inline void error(const std::string& errormessage)
+void error(const std::string& errormessage)
 {
     std::cerr << errormessage << std::endl;
     throw std::runtime_error(errormessage);
 }
 
-inline void error(std::string s1, std::string s2)
+void error(std::string s1, std::string s2)
 {
     error(s1+s2);
 }
 
 // deal with + and -
-double expression(Token_stream ts)
+double expression(Token_stream& ts)
 {
     double left = term(ts);      // read and evaluate a Term
     Token t = ts.get();        // get the next token from token stream
@@ -39,7 +39,7 @@ double expression(Token_stream ts)
 }
 
 // deal with *, /, and %
-double term(Token_stream ts)
+double term(Token_stream& ts)
 {
     double left = primary(ts);
     Token t = ts.get();        // get the next token from token stream
@@ -66,7 +66,7 @@ double term(Token_stream ts)
 }
 
 // deal with numbers and parentheses
-double primary(Token_stream ts)
+double primary(Token_stream& ts)
 {
     Token t = ts.get();
 

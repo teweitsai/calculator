@@ -10,7 +10,7 @@
                 "-stdlib=libc++",
                 "main.cpp",
                 "-o",
-                "main",
+                "bin/main",
                 "--debug"
             ],
             "group": {
