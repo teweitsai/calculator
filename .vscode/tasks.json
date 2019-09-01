@@ -8,7 +8,7 @@
             "args": [
                 "-std=c++17",
                 "-stdlib=libc++",
-                "main.cpp",
+                "src/main.cpp",
                 "-o",
                 "bin/main",
                 "--debug"

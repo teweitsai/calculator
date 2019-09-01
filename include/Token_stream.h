@@ -1,0 +1,11 @@
+#include <Token.h>
+
+class Token_stream {
+public:
+    Token_stream();   // make a Token_stream that reads from cin
+    Token get();      // get a Token (get() is defined elsewhere)
+    void putback(Token);    // put a Token back
+private:
+    bool full;        // is there a Token in the buffer?
+    Token buffer;     // here is where we keep a Token put back using putback()
+};
