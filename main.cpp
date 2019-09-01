@@ -7,19 +7,6 @@
 //
 
 #include <iostream>
-#include <cstdlib>
-#include <ctime>
-#include <cmath>
-#include <vector>
-#include <complex>
-#include <string>
-#include <algorithm>
-#include <iterator>
-#include <stdexcept>
-#include <utility>
-#include <valarray>
-#include <cstring>
-#include <fstream>
 #include <include/Token_stream.h>
 #include <include/Utility.h>
 

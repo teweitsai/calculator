@@ -1,3 +1,6 @@
+#ifndef TOKEN_STREAM_H
+#define TOKEN_STREAM_H
+
 #include <Token.h>
 
 class Token_stream {
@@ -9,3 +12,5 @@ private:
     bool full;        // is there a Token in the buffer?
     Token buffer;     // here is where we keep a Token put back using putback()
 };
+
+#endif

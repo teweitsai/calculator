@@ -1,3 +1,6 @@
+#ifndef UTILITY_H
+#define UTILITY_H
+
 #include <iostream>
 #include <Token_stream.h>
 
@@ -13,3 +16,5 @@ double term(Token_stream) {}
 
 // deal with numbers and parentheses
 double primary(Token_stream) {}
+
+#endif
