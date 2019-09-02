@@ -1,8 +1,8 @@
 CC := clang++ # This is the main compiler
 
 SRCDIR := src
-BUILDDIR := build/calculator
-TARGET := bin/calculator
+BUILDDIR := build/calc
+TARGET := bin/calc
  
 SRCEXT := cpp
 SOURCES := $(shell find $(SRCDIR) -type f -name *.$(SRCEXT))
