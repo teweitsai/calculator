@@ -8,12 +8,11 @@
             "args": [
                 "-std=c++17",
                 "-stdlib=libc++",
-                "main.cpp",
                 "src/*.cpp",
                 "-o",
                 "bin/main",
                 "-I",
-                "include/",
+                "include",
                 "--debug"
             ],
             "group": {
