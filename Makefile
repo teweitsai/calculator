@@ -7,7 +7,7 @@ BUILDDIR := build/calc
 BUILDDIRTEST := build/test
 
 TARGET := bin/calc
-TARGETTEST := bin/test
+TARGETTEST := bin/testCalc
  
 SRCEXT := cpp
 
