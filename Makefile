@@ -9,6 +9,9 @@ BUILDDIRTEST := build/test
 TARGET := bin/calc
 TARGETTEST := bin/testCalc
  
+DEPENDENCYDIR := dependency
+GOOGLETESTDIR := $(DEPENDENCYDIR)/googletest
+
 SRCEXT := cpp
 
 SOURCES := $(shell find $(SRCDIR) -type f -name *.$(SRCEXT))
@@ -46,9 +49,15 @@ all: $(TARGET)
 
 test: $(TARGETTEST)
 
+googletest:
+	@echo " Install googletest..."
+	@rm -rf $(GOOGLETESTDIR)
+	@cd $(DEPENDENCYDIR); git clone https://github.com/google/googletest.git
+	@cd $(GOOGLETESTDIR); cmake .; make
+
 clean:
 	@echo " Cleaning..."; 
 	@echo " $(RM) -r $(BUILDDIR) $(TARGET)"; $(RM) -r $(BUILDDIR) $(TARGET)
 	@echo " $(RM) -r $(BUILDDIRTEST) $(TARGETTEST)"; $(RM) -r $(BUILDDIRTEST) $(TARGETTEST)
 
-.PHONY: all test clean
+.PHONY: all test googletest clean
